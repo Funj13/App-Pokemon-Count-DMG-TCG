@@ -1,7 +1,7 @@
 name: pokedmg
 description: PokeDMG TCG - Damage Counter
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -12,12 +12,24 @@ dependencies:
   provider: ^6.1.1
   google_fonts: ^6.1.0
   flutter_animate: ^4.3.0
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.2
+  uuid: ^4.4.0
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icon/app_icon.jpg"
+  min_sdk_android: 21
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/icon/app_icon.jpg
